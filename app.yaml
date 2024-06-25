@@ -1,0 +1,12 @@
+runtime: go122
+
+env_variables:
+  LINE_CHANNEL_SECRET: "projects/$Project_Id/secrets/LINE_CHANNEL_SECRET/versions/latest"
+  LINE_CHANNEL_ACCESS_TOKEN: "projects/$Project_Id/secrets/LINE_CHANNEL_ACCESS_TOKEN/versions/latest"
+  OPENAI_API_KEY: "projects/$Project_Id/secrets/OPENAI_API_KEY/versions/latest"
+  GOOGLE_APPLICATION_CREDENTIALS: "$Project_Id-aaee6b8a5f53.json"
+  GOPROXY: "https://proxy.golang.org,direct"
+
+handlers:
+- url: /.*
+  script: auto
